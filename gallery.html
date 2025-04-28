@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery of Work - My Portfolio</title>
+  <style>
+    /* Same CSS + gallery styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+    nav { background-color: #2a9d8f; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+    .nav-menu { list-style: none; display: flex; justify-content: center; gap: 2rem; }
+    .nav-menu li a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: color 0.3s ease; }
+    .nav-menu li a:hover, .nav-menu li a.active { color: #e9c46a; }
+    header { background-color: #2a9d8f; color: white; padding: 3rem 1rem; text-align: center; margin-bottom: 2rem; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; }
+    main { width: 90%; max-width: 900px; margin: 0 auto 3rem auto; }
+    section { margin-bottom: 3rem; }
+    section h2 { color: #264653; margin-bottom: 1rem; border-bottom: 2px solid #2a9d8f; padding-bottom: 0.3rem; }
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery figure {
+      width: 30%;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #ccc;
+      text-align: center;
+    }
+    Gallery container styles */
+    #gallery {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto 3rem auto;
+    }
+    #gallery h2 {
+      color: #264653;
+      border-bottom: 3px solid #2a9d8f;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .gallery figure {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(42, 157, 143, 0.1);
+      padding: 0.5rem;
+      width: 250px; /* fixed width */
+      text-align: center;
+      margin: 0;
+    }
+    .gallery img {
+      width: 100%;
+      height: 160px; /* fixed height */
+      object-fit: cover; /* crop/scale image to fill box */
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .gallery figcaption {
+      font-size: 1rem;
+      color: #264653;
+      font-weight: 600;
+    }
+    figcaption {
+      margin-top: 0.5rem;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+    footer { background-color: #2a9d8f; color: white; text-align: center; padding: 1rem 0; position: relative; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="gallery.html" class="active">Gallery of Work</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="social-proof.html">Social Proof</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Mots'elisi Mokhesuoe - Prospective Media Practicioner</p>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <h2>Gallery of Work</h2>
+      <div class="gallery">
+        <figure>
+          <img src="C:\Users\STUDENT.DELL-12\Desktop\Tsheli\video-editing.jpg" alt="video-editing.jpg" />
+          <figcaption>Video Editing (Adobe Premiere Pro)</figcaption>
+        </figure>
+        <figure>
+          <img src="C:\Users\STUDENT.DELL-12\Desktop\Tsheli\one.png" alt="one.png" />
+          <figcaption>Photography & Photo Editing (Adobe Photoshop)</figcaption>
+        </figure>
+        <figure>
+          <img src="C:\Users\STUDENT.DELL-12\Desktop\Tsheli\film.jpeg" alt="film.jpeg" />
+          <figcaption>TV Drama Production & Broadcasting</figcaption>
+        </figure>
+        <!-- Add more work items here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mots'elisi Mokhesuoe. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - My Portfolio</title>
+  <style>
+    /* Same CSS + form styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+    nav { background-color: #2a9d8f; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+    .nav-menu { list-style: none; display: flex; justify-content: center; gap: 2rem; }
+    .nav-menu li a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: color 0.3s ease; }
+    .nav-menu li a:hover, .nav-menu li a.active { color: #e9c46a; }
+    header { background-color: #2a9d8f; color: white; padding: 3rem 1rem; text-align: center; margin-bottom: 2rem; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; }
+    main { width: 90%; max-width: 900px; margin: 0 auto 3rem auto; }
+    section { margin-bottom: 3rem; }
+    section h2 { color: #264653; margin-bottom: 1rem; border-bottom: 2px solid #2a9d8f; padding-bottom: 0.3rem; }
+    form {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #ccc;
+      max-width: 500px;
+      margin-bottom: 1rem;
+    }
+    form label {
+      font-weight: bold;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #2a9d8f;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #21867a;
+    }
+    .social-links a {
+      color: #2a9d8f;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 1rem;
+    }
+    .social-links a:hover {
+      color: #e76f51;
+    }
+    footer { background-color: #2a9d8f; color: white; text-align: center; padding: 1rem 0; position: relative; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="gallery.html">Gallery of Work</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="social-proof.html">Social Proof</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Mots'elisi Mokhesuoe - Prospective Media Practicioner</p>
+  </header>
+
+  <main>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br />
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-links">
+        <a href="https://facebook.com/in/motselisi Mokesuoe" target="_blank" rel="noopener noreferrer">Facebook</a> |
+        <a href="https://github.com/tsheli437" target="_blank" rel="noopener noreferrer">GitHub</a> |
+        <a href="https://tiktok.com/@USER17542613233334" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mots'elisi Mokhesuoe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
